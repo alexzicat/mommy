@@ -4,7 +4,7 @@
   "description": "",
   "main": "mommy.js",
   "scripts": {
-    "test": "karma start"
+    "test": "karma start --single-run --browsers PhantomJS"
   },
   "repository": {
     "type": "git",
