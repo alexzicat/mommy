@@ -1,7 +1,7 @@
 {
   "name": "mommy",
   "version": "1.0.0",
-  "description": "",
+  "description": "Easy inheritance for javascript objects",
   "main": "mommy.js",
   "scripts": {
     "test": "karma start --single-run --browsers PhantomJS"
