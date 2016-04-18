@@ -1,7 +1,7 @@
 // Karma configuration
 // Generated on Thu Apr 14 2016 18:32:44 GMT-0400 (EDT)
 
-module.exports = function(config) {
+module.exports = function (config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
@@ -35,7 +35,7 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress', 'coverage'],
+    reporters: ['progress', 'coverage', 'coveralls'],
 
 
     // web server port
@@ -66,6 +66,11 @@ module.exports = function(config) {
 
     // Concurrency level
     // how many browser should be started simultaneous
-    concurrency: Infinity
+    concurrency: Infinity,
+
+    coverageReporter: {
+      type: 'lcov',
+      dir: 'coverage/'
+    }
   });
 };
